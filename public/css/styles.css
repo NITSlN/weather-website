@@ -1,0 +1,84 @@
+body{
+    color: rgb(29, 18, 18);
+    max-width: 350px;
+    font-family: arial;
+    max-width: 70%;
+    margin: auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content{
+    flex-grow: 1;
+}
+footer{
+    color: gray;
+    border-top: 1px solid gray;
+    margin: 37px 0px;
+    padding:25px 3px;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+header a{
+    display: inline-block;
+    color: gray;
+    text-decoration: none;
+    margin: 16px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: gray;
+}
+.data{
+    color: rgb(141, 139, 139);
+    margin: 52px 9px;
+    font-weight: 600;
+}
+input{
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    transition: .2s;
+}
+input[type=text]:focus {
+    box-shadow: 0 0 7px rgb(39, 39, 39);
+    border: 1px solid gray;
+    border-top-style: dotted;
+    
+}
+
+button{
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(102, 100, 100);
+    cursor: pointer;
+    padding: 6px 10px;
+    letter-spacing: .5px;
+    transition: .5s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+#msg-1{
+    margin-top: 46px;
+    margin-bottom: -17px;
+}
+#msg-2{
+    margin-top: 0px;
+}
+#msg-3{
+    margin: 33px 9px;
+    margin-bottom: 20px;
+}
