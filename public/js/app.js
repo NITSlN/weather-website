@@ -8,7 +8,6 @@ const msg3 = document.querySelector('#msg-3')
 
 img.src = ''
 msg1.textContent = ''
-msg2.textContent = ''
 
 
 
