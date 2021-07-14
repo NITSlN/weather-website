@@ -2,7 +2,6 @@ body{
     color: rgb(29, 18, 18);
     max-width: 350px;
     font-family: arial;
-    max-width: 70%;
     margin: auto;
     padding: 0 16px;
     display: flex;
@@ -52,7 +51,6 @@ input{
 input[type=text]:focus {
     box-shadow: 0 0 7px rgb(39, 39, 39);
     border: 1px solid gray;
-    border-top-style: dotted;
     
 }
 
@@ -63,7 +61,7 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(102, 100, 100);
     cursor: pointer;
-    margin: 10px 0px;
+    margin: 5px 0px;
     padding: 6px 10px;
     letter-spacing: .5px;
     transition: .5s;
