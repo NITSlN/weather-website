@@ -45,7 +45,7 @@ app.get('/weather', (req, res) => {
                 res.send({
                     query:req.query.location,
                     location,
-                    forecastData:'The current temperature is '+temp+' degree celcius but the temperature felt like ' + feelsLike + '.',
+                    forecastData:'The current temperature is '+temp+' degree celcius but the temperature feels like ' + feelsLike + '.',
                     condition,
                     imgCode
                 })
