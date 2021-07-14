@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
     const location = search.value
     msg1.textContent = 'Loading...'
     msg2.textContent = ''
-    fetch('http://localhost:3000/weather?location='+location)
+    fetch('/weather?location='+location)
         .then((res) => {
             res.json().then(data => {
                 if (data.err) {
