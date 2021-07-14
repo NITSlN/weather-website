@@ -63,6 +63,7 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(102, 100, 100);
     cursor: pointer;
+    margin: 10px 0px;
     padding: 6px 10px;
     letter-spacing: .5px;
     transition: .5s;
