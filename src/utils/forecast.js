@@ -12,6 +12,7 @@ const forecast = (lon,lat,callback)=>{
     } else {
         // callback(undefined,'Condition: ' + body.weather[0].description + ".");
         callback(undefined,{
+            location:body.name,
             condition:body.weather[0].description,
             temp:body.main.temp,
             feelsLike:body.main.feels_like,

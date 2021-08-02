@@ -11,6 +11,9 @@ body{
 .main-content{
     flex-grow: 1;
 }
+form{
+    display: inline-block;
+}
 footer{
     color: gray;
     border-top: 1px solid gray;

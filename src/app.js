@@ -29,7 +29,25 @@ app.get('/about', (req, res) => {
 
 
 app.get('/weather', (req, res) => {
-    if(req.query.location){
+    console.log(req.query);
+    if(req.query.latitude && req.query.longitude){
+        const longitude =req.query.longitude
+        const latitude = req.query.latitude
+        forecast(longitude, latitude, (err, {location,condition,temp,feelsLike,imgCode}={}) => {
+            if(err){
+                return res.send({err});
+            }
+            res.send({
+                location,
+                forecastData:'The current temperature is '+temp+' degree celcius but the temperature feels like ' + feelsLike + '.',
+                condition,
+                imgCode
+            })
+        })
+
+
+    }
+    else if(req.query.location){
         console.log(req.query);
         const {location} = req.query
         // return res.send({location:req.query.address,weather:'good'})
